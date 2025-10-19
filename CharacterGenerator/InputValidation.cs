@@ -10,6 +10,7 @@ namespace CharacterGenerator
     //Class for validating user input
     internal class InputValidation
     {
+        //This method validates that the user input is a positive integer
         public static int ValidateIntInput(string question)
         {
             Console.WriteLine(question);
@@ -23,7 +24,7 @@ namespace CharacterGenerator
             return result;
         }
 
-
+        //This method validates that the user input is an integer within a specified range 
         public static int ValidateIntInRange(string question, int min, int max)
         {
             Console.Write(question);

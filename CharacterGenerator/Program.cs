@@ -63,7 +63,7 @@ namespace CharacterGenerator
                 }
 
             }
-
+            //Just menu to display options to the user
             static void DisplayMenu()
             {
 

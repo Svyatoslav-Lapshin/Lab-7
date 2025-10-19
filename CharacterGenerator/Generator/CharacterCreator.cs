@@ -13,12 +13,13 @@ namespace CharacterGenerator.Generator
     {
         private readonly Random _random = new Random();
         //Instance of DataRepository to access data arrays with character and other.
-        private readonly DataRepository _dataRepository = new DataRepository(); 
-       
+        private readonly DataRepository _dataRepository = new DataRepository();
+        //Method to generate a  random character
         public Character GenerateCharacter()
         {
-
+            //Generate a random gender for character
             string gender= GenerateGender();
+            //Create a new character with random methods
             var character = new Character
             {
                 Name = GenerateName(gender),
@@ -54,6 +55,7 @@ namespace CharacterGenerator.Generator
         //Helper method to get a random item from an array, returns a default message if the array is null or empty
         private string GetRandomFrom(string[] item)
         {
+            //Check if the array is null or empty
             if (item == null || item.Length == 0)
             {
                 return "";
